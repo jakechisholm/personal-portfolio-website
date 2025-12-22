@@ -107,7 +107,7 @@ const Projects = () => {
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               In a group with two other individuals, I assisted in developing a multi-player fighting game, played on a single device.
               This game was programmed in Java, utilizing the libGDX game engine. This game included full menu navigation, multiple characters
-              with unique movesets, Computer Player Characters &lpar;CPUs&rpar;, multiple stages, unlockables & more. This project is publicly accessible
+              with unique movesets, Computer Player Characters &#40;CPUs&#41;, multiple stages, unlockables & more. This project is publicly accessible
               on my GitHub account. The video demo on the right shows me playing with my friend, and a CPU at the end.
             </div>
           </div>
