@@ -6,6 +6,7 @@ import Image from "next/image";
 import Video from 'next-video';
 import DSASnakeGame from "@/videos/dsa-snake-game-demo.mp4";
 import FightingGame from "@/videos/fighting-game-demo.mp4";
+import Pacemaker from "@/videos/Pacemaker.mp4";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,6 +25,29 @@ const Projects = () => {
             }}>
           Projects
         </div>
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
+          <div className='relative w-full max-w-[750px] aspect-video'>
+            <Video src={Pacemaker}/>
+          </div>
+          <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
+            style={{
+              fontFamily: inter.style.fontFamily,
+            }}>
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[20px]">
+              Pacemaker
+            </div>
+            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] mb-[40px]">
+              September 2025 - November 2025
+            </div>
+            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
+              In a group with other individuals, I helped lead embedded development and real-time state machine design for a Pacemaker device, which was developed
+              on a FRDM-K64F ARM Microcontroller. The state machine, programmed in MATLAB&apos;s Simulink, was capable of pacing multiple bradycardia operating modes, making use of
+              Stateflow to develop control algorithms. In addition, I was solely responsible for developing communications protocols in Stateflow through UART, in order to 
+              enable telemetry exchange with the external medical GUI software, developed by other members on the team. Visible to the left is an overview of the Simulink design.
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
         <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
           <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
             style={{
@@ -62,13 +86,14 @@ const Projects = () => {
             </div>
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               Across the courses COMPENG 2SH4 and COMPENG 2SI3 at McMaster, we got to develop the snake game, fully based in the command line terminal.
-              Initially, the game was developed independently using OOP principles. While completing 2SI3, the game then grew to take advantage of linked lists,
-              stacks & queues, binary search trees and hashing to implement a more robust featureset into gameplay.
+              Initially, the game was developed independently using OOP principles. While completing 2SI3, the game&apos;s featureset became far more robust, as we 
+              developed various data structures and algorithms from scratch to supplement gameplay. This DSA featurset included: Re-factoring the Snake growth algorithm
+              to make use of Linked Lists, using Queues for input commands in multiplayer gameplay, as well as Binary Search Trees and Hashing.
             </div>
           </div>
         </div>
         <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
-        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%] mb-[150px]">
           <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
             style={{
               fontFamily: inter.style.fontFamily,
@@ -90,7 +115,7 @@ const Projects = () => {
             <Video src={FightingGame}/>
           </div>
         </div>
-        <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
+        {/* <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
         <div className={`text-[#C8A3D6] second-primary-title-sizing font-bold tracking-[3%] mb-[50px]`}
           style={{
               fontFamily: inter.style.fontFamily,
@@ -126,7 +151,7 @@ const Projects = () => {
               research phase, completion TBA.
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </LayoutContainer>  
   )

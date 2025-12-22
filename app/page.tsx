@@ -99,7 +99,7 @@ export default function Home() {
                 </span>
                 <Image src="/linkedin-for-portfolio.png" alt="LinkedIn logo" width={48} height={48}></Image>
               </Link>
-              <button className="bg-[#F31D64] button-hover py-3 px-12 rounded-[40px] cursor-pointer flex justify-around items-center element-shadow" onClick={() => window.open('./JacobChisholm-Resume-Fall2025.pdf')}>
+              <button className="bg-[#F31D64] button-hover py-3 px-12 rounded-[40px] cursor-pointer flex justify-around items-center element-shadow" onClick={() => window.open('./JacobChisholm-Resume-Website.pdf')}>
                 <span className={`text-white text-[24px] font-[${inter}] font-semibold tracking-[3%] mr-2`}
                   style={{
                     fontFamily: inter.style.fontFamily,

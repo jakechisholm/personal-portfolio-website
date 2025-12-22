@@ -62,7 +62,7 @@ const LayoutContainer: React.FC<LayoutContainerProps> = ({ children, setOverlay 
                 <Link className="smooth-underline" href="https://ca.linkedin.com/in/jake-chisholm-57a785307" style={{fontFamily: inter.style.fontFamily}}>
                     LinkedIn
                 </Link>
-                <button className="cursor-pointer smooth-underline" onClick={() => window.open('./JacobChisholm-Resume-Fall2025.pdf')} style={{fontFamily: inter.style.fontFamily}}>
+                <button className="cursor-pointer smooth-underline" onClick={() => window.open('./JacobChisholm-Resume-Website.pdf')} style={{fontFamily: inter.style.fontFamily}}>
                     Resume
                 </button>
             </div>
