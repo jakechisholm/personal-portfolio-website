@@ -26,6 +26,27 @@ const Projects = () => {
           Projects
         </div>
         <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
+          <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
+            style={{
+              fontFamily: inter.style.fontFamily,
+            }}>
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
+              LiDAR 3D Scanner
+            </div>
+            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
+              I developed a LiDAR scanner on TI-MSP432E401Y Texas Instruments microcontroller. 
+              The main control logic & routines for the microcontroller were programmed in embedded C, which externally interfaced a stepper motor, Time-of-Flight sensor, & other components through GPIO.
+              The motor & Time-of-Flight sensor were used in tandem to collect distance measurements by rotating the motor 360 degrees, stopping at several angles throughout to take measurements. An external breadboard connected
+              with mechanical pushbuttons were used to provide user functionality to the scanner, such as changing the distance measurement rate, changing the direction of motor rotation, among others.
+              Through scanning, the data is transmitted over UART to a PC, where a Python script using Matplotlib can visualize LiDAR data in point clouds for 3D mesh reconstruction.
+            </div>
+          </div>
+          <div className='relative w-full max-w-[750px] aspect-video'>
+            <Image src='/2dx-final-project.jpg' alt='' fill className='object-cover' />
+          </div>
+        </div>
+        <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
           <div className='relative w-full max-w-[750px] aspect-video'>
             <Video src={Pacemaker}/>
           </div>
@@ -33,11 +54,8 @@ const Projects = () => {
             style={{
               fontFamily: inter.style.fontFamily,
             }}>
-            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[20px]">
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
               Pacemaker
-            </div>
-            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] mb-[40px]">
-              September 2025 - November 2025
             </div>
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               In a group with other individuals, I helped lead embedded development and real-time state machine design for a Pacemaker device, which was developed
@@ -53,11 +71,8 @@ const Projects = () => {
             style={{
               fontFamily: inter.style.fontFamily,
             }}>
-            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[20px]">
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
               Personal Portfolio
-            </div>
-            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] mb-[40px]">
-              June 2025 - September 2025
             </div>
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               Developed a full-stack personal portfolio website using a Next.js framework and deployed on Netlify. Made use of Tailwind CSS for front-end work,
@@ -78,11 +93,8 @@ const Projects = () => {
             style={{
               fontFamily: inter.style.fontFamily,
             }}>
-            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[20px]">
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
               DSA Snake Game
-            </div>
-            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] mb-[40px]">
-              November 2024 - April 2025
             </div>
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               Across the courses COMPENG 2SH4 and COMPENG 2SI3 at McMaster, we got to develop the snake game, fully based in the command line terminal.
@@ -93,16 +105,13 @@ const Projects = () => {
           </div>
         </div>
         <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
-        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%] mb-[150px]">
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
           <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
             style={{
               fontFamily: inter.style.fontFamily,
             }}>
-            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[20px]">
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
               Multi-Player Fighting Game
-            </div>
-            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] mb-[40px]">
-              May 2023 - June 2023
             </div>
             <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
               In a group with two other individuals, I assisted in developing a multi-player fighting game, played on a single device.
@@ -113,6 +122,25 @@ const Projects = () => {
           </div>
           <div className='relative w-full max-w-[750px] aspect-video'>
             <Video src={FightingGame}/>
+          </div>
+        </div>
+        <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%] mb-[150px]">
+          <div className='relative w-full max-w-[750px] aspect-video'>
+            <Image src='/trafficlightcontroller.png' alt='' fill className='object-cover' />
+          </div>
+          <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
+            style={{
+              fontFamily: inter.style.fontFamily,
+            }}>
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
+              Traffic Light Controller
+            </div>
+            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
+              As an intro into embedded development and electronics, I designed a full traffic light control system using a finite state machine with timed phases, pedestrian inputs, & advance-green behavior.
+              The main control logic was implemented in embedded C++ on an Arduino, using non-blocking timing & input-debouncing for mechanical pushbuttons. For electrical design, the microcontroller was interfaced
+              via GPIO to physical breadboard mimicking traffic intersection, making use of buttons, resistors, LEDs & wires. To the right is a screenshot of an early design in TinkerCAD during development.
+            </div>
           </div>
         </div>
         {/* <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
