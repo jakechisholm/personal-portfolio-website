@@ -26,6 +26,26 @@ const Projects = () => {
           Projects
         </div>
         <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
+          <div className='relative w-full max-w-[750px] aspect-video'>
+            <Image src='/doorsense.jpeg' alt='' fill className='object-cover' />
+          </div>
+          <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
+            style={{
+              fontFamily: inter.style.fontFamily,
+            }}>
+            <div className="text-[#C8A3D6] font-semibold subtitle-text-sizing tracking-[3%] mb-[40px]">
+              DoorSense
+            </div>
+            <div className="future-projects-text-sizing text-[#C8A3D6] tracking-[3%] text-center">
+              A personal embedded systems project that delivers a functional MVP adjacent to smart home monitoring devices like a Ring camera. 
+              DoorSense combines an IoT edge device with a companion mobile app to provide real-time front-door awareness including live video streaming, 
+              facial recognition of familiar contacts, and instant push notifications for detected persons and objects. This project is fully accessible
+              on my GitHub if you're interested in more information.
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#3A0055] h-[4px] w-[88%] mt-30 mb-30 mx-auto"/>
+        <div className="bg-[#1D004D] h-auto border-3 border-solid border-[#C8A3D6] rounded-lg py-6 px-[30px] flex stack-responsiveness justify-between items-center w-[85%]">
           <div className="flex flex-col justify-center items-center width-adjustments-responsiveness add-margin-mobile"
             style={{
               fontFamily: inter.style.fontFamily,
