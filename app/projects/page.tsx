@@ -40,7 +40,7 @@ const Projects = () => {
               A personal embedded systems project that delivers a functional MVP adjacent to smart home monitoring devices like a Ring camera. 
               DoorSense combines an IoT edge device with a companion mobile app to provide real-time front-door awareness including live video streaming, 
               facial recognition of familiar contacts, and instant push notifications for detected persons and objects. This project is fully accessible
-              on my GitHub if you're interested in more information.
+              on my GitHub if you&apos;re interested in more information.
             </div>
           </div>
         </div>
